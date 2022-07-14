@@ -42,8 +42,11 @@ Bases de datos: MySQL
 ## Autoras ✒️
 
 Laura García  https://github.com/lauracastelao/
+
 Viviana https://github.com/Viviana95
+
 Tania Fernandez https://github.com/TaniaRodriguezFdez/TaniaRodriguezFdez
+
 Verónica https://github.com/Vero1214
 
 ```
