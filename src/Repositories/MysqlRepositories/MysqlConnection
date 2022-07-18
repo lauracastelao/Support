@@ -1,0 +1,37 @@
+<?php
+
+namespace App\Repositories\MysqlRepositories;
+
+use PDO;
+use PDOException;
+
+class MysqlConnection {
+    private string $localhost = "localhost";
+    private string $db_name = "support_db";
+    private string $username = "root";
+    private string $password = "";
+
+    public $mysql;
+
+public function __construct()
+{
+    try {
+        $this->mysql = $this->getConnection();
+        var_dump($this->mysql);
+    } catch (PDOException $ex){
+        echo"error en la conexión con DB: " . $ex->getMessage();
+        die();
+    }
+} 
+
+public function getConnection()
+{
+    $charset = "utf-8";
+    $options = [PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC];
+    $dsn = "mysql:host={$this->localhost};dbname-={$this->db_name};$charset;";
+    $pdo = new PDO($dsn,$this->username,$this->password,$options);
+    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+    return $pdo;  //esto es la conexión de acceso a la base de datos
+}
+}
