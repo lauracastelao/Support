@@ -30,7 +30,7 @@ Backend: PHP.
 
 Bases de datos: MySQL
 
-```
+
 
 
 ## 🔗 Links de recursos
