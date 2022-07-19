@@ -7,7 +7,7 @@ use PDOException;
 
 class MysqlConnection {
     private string $localhost = "localhost";
-    private string $db_name = "support_db";
+    private string $db_name = "factoria_f5_supportapp";
     private string $username = "root";
     private string $password = "";
 

@@ -2,8 +2,8 @@
 
 namespace App;
 
-// use App\ClientControllers\Controller;
+use App\Controllers\Controller;
 
-// new Controller() ;
+//  new Controller;
 
- echo 'Hola';
+echo "hola";

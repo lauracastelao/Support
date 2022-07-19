@@ -3,9 +3,30 @@
 <?php 
     require_once("./Layout.php"); 
     require_once("./Nav.php");
-?>
 
-<body id="page-top" class="body-index" style="background-image: url('https://mdbootstrap.com/img/Photos/Others/images/76.jpg')">
+
+   
+// $inc = include("connection.php");
+// if ($inc) {
+// 	$consulta = "SELECT * FROM client_db";
+// 	$resultado = mysqli_query($conex,$consulta);
+// 	if ($resultado) {
+// 		while ($row = $resultado->fetch_array()) {
+	    
+// 	    $name = $row['name'];
+// 	    $theme = $row['theme'];
+// 	    $date = $row['date'];
+//         $detail = $row['detail'];
+//         }
+//     }
+// }
+
+	    ?>
+ 
+
+
+
+<body id="page-top" class="body-index" style="background-image: url('https://raw.githubusercontent.com/lauracastelao/image/main/assets/fondo.png')bg-no-repeat">
 
     <main>
         <div id="wrapper">
@@ -17,13 +38,13 @@
                         <div class="card-body">
                             <div class="table-responsive">
                                     
-                                <table class="table table-bordered" id="dataTable" cellspacing="0">
+                                <table class="table table-bordered" scope="row" id="dataTable" cellspacing="0">
                                  <thead>
                                         <tr>
-                                            <th>Date / time</th>
+                                            <th>Date</th>
                                             <th>Id</th>
                                             <th>Name</th>
-                                            <th>Issue</th>
+                                            <th>theme</th>
                                             <th>Detail</th>
                                             <th><a href="?action=create">
                                             <button type="button" class="btn btn-outline-dark go-add-task float-end btn-mg">completed</button>
