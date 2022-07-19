@@ -13,13 +13,13 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">LISTADO DE SOLICITUDES</a>
+          <a class="nav-link active" aria-current="page" href="./ClientsList.php">LISTADO DE SOLICITUDES</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="./Form.php">AÑADIR SOLICITUD</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">DETALLE</a>
+          <a class="nav-link" href="./EditForm.php">DETALLE</a>
         </li>
    
       </ul>

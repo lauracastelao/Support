@@ -2,10 +2,8 @@
 
 namespace App;
 
-use App\ClientControllers\ClientClientController;
-use App\Repositories\MysqlRepositories\MysqlConnection;
+use App\Controllers\Controller;
 
-new MysqlConnection; 
+//  new Controller;
 
-
- 
+echo "hola";

@@ -2,14 +2,15 @@
 
 namespace App\Models;
 
-use App\Database;
+
+use App\Repositories\MysqlRepositories\MysqlConnection;
 
 class Client {
     private ?int $id;
     private string $client;
     private ?string $date_time;
     private string $issue;
-    private $database;
+    private $mySqlConnection;
     private $table = "appointments";
     
     public function __construct( int $id = null, string $client = '', string $issue = '',string $detail='', string $date_time = '')
@@ -20,8 +21,8 @@ class Client {
         $this->detail = $detail;
         $this->id = $id;
 
-        if (!$this->database) {
-            $this->database = new Database;
+        if (!$this->mySqlConnection) {
+            $this->mySqlConnection = new MysqlConnection;
             
         }
     }
