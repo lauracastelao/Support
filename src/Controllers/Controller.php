@@ -6,7 +6,7 @@ use App\Core\View;
 use App\Models\Client;
 use App\Models\Logger;
 
-class ClientClientController {
+class Controller {
 
     private Logger $logger;
 
